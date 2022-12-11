@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 40px;
+      }
+
+      .wrapper div {
+        background-color: lightgray;
+      }
+
+      .card1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+
+      .card4 {
+        grid-column: 1/3;
+      }
+
+      /*.card5 {
+        grid-column: 1/4;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facere.
+      </div>
+      <div class="card2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facere.
+      </div>
+      <div class="card3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facere.
+      </div>
+      <div class="card4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facere.
+      </div>
+      <div class="card5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, facere.
+      </div>
+    </div>
+  </body>
+</html>
